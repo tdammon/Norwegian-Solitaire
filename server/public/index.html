@@ -1,256 +1,265 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Norwegian Card Game</title>
-    <link rel="stylesheet" href="scripts/stylesheet.css">
+    <link rel="stylesheet" href="scripts/stylesheet.css" />
   </head>
   <body>
     <div id="header">
       <ul id="navbar">
-        <li><a href='#' class='dropdown'>Rules</a>
-          <div class='rules'>
+        <li>
+          <a href="#" class="dropdown">Rules</a>
+          <div class="rules">
             <ul>
-              <li>Rules Explanation Here</li>
+              <li>
+                The objective of the game is to move all of the cards into
+                sequential order by suit. The yellow cards indicate an empty
+                space into which a card may be moved. The only card that can
+                legally be moved to these empty spaces is the card sequentially
+                following the card immediately to the left. In otherwords, if
+                the card to left of a yellow card is a 2 of clubs, that yellow
+                card may be replaced with the 3 of clubs. Nothing may be placed
+                to the right of a king. If there are no legal moves left the
+                deck must be reshuffled.
+              </li>
             </ul>
           </div>
         </li>
-        <li><a class='timer'>Timer</a></li>
-        <li id='clock'>00:00</li>
-        <li><a class='moves'>Moves</a></li>
-        <li id='counter'>000</li>
-        <li><a href='#' id='button'>Shuffle</a></li>
+        <li><a class="timer">Timer</a></li>
+        <li id="clock">00:00</li>
+        <li><a class="moves">Moves</a></li>
+        <li id="counter">000</li>
+        <li><a href="#" id="button">Shuffle</a></li>
       </ul>
     </div>
     <section id="victory">
       <h1 id="gradient">You Win!</h1>
     </section>
     <section class="the_board">
-
-      <div class="card" data-value=0 style="order: 0;">
-        <img class ="front-face" src= "PNG/AC.png"/>
+      <div class="card" data-value="0" style="order: 0">
+        <img class="front-face" src="PNG/AC.png" />
       </div>
 
-      <div class="card" data-value=1>
-        <img class ="front-face" src= "PNG/2C.png"/>
+      <div class="card" data-value="1">
+        <img class="front-face" src="PNG/2C.png" />
       </div>
 
-      <div class="card" data-value=2>
-        <img class ="front-face" src= "PNG/3C.png"/>
+      <div class="card" data-value="2">
+        <img class="front-face" src="PNG/3C.png" />
       </div>
 
-      <div class="card" data-value=3>
-        <img class ="front-face" src= "PNG/4C.png"/>
+      <div class="card" data-value="3">
+        <img class="front-face" src="PNG/4C.png" />
       </div>
 
-      <div class="card" data-value=4>
-        <img class ="front-face" src= "PNG/5C.png"/>
+      <div class="card" data-value="4">
+        <img class="front-face" src="PNG/5C.png" />
       </div>
 
-      <div class="card" data-value=5>
-        <img class ="front-face" src= "PNG/6C.png"/>
+      <div class="card" data-value="5">
+        <img class="front-face" src="PNG/6C.png" />
       </div>
 
-      <div class="card" data-value=6>
-        <img class ="front-face" src= "PNG/7C.png"/>
+      <div class="card" data-value="6">
+        <img class="front-face" src="PNG/7C.png" />
       </div>
 
-      <div class="card" data-value=7>
-        <img class ="front-face" src= "PNG/8C.png"/>
+      <div class="card" data-value="7">
+        <img class="front-face" src="PNG/8C.png" />
       </div>
 
-      <div class="card" data-value=8>
-        <img class ="front-face" src= "PNG/9C.png"/>
+      <div class="card" data-value="8">
+        <img class="front-face" src="PNG/9C.png" />
       </div>
 
-      <div class="card" data-value=9>
-        <img class ="front-face" src= "PNG/10C.png"/>
+      <div class="card" data-value="9">
+        <img class="front-face" src="PNG/10C.png" />
       </div>
 
-      <div class="card" data-value=10>
-        <img class ="front-face" src= "PNG/JC.png"/>
+      <div class="card" data-value="10">
+        <img class="front-face" src="PNG/JC.png" />
       </div>
 
-      <div class="card" data-value=11>
-        <img class ="front-face" src= "PNG/QC.png"/>
+      <div class="card" data-value="11">
+        <img class="front-face" src="PNG/QC.png" />
       </div>
 
-      <div class="card" data-value=12>
-        <img class ="front-face" src= "PNG/KC.png"/>
+      <div class="card" data-value="12">
+        <img class="front-face" src="PNG/KC.png" />
       </div>
 
-      <div class="card" data-value=13 style="order :14;">
-        <img class ="front-face" src= "PNG/AS.png"/>
+      <div class="card" data-value="13" style="order: 14">
+        <img class="front-face" src="PNG/AS.png" />
       </div>
 
-      <div class="card" data-value=14>
-        <img class ="front-face" src= "PNG/2S.png"/>
+      <div class="card" data-value="14">
+        <img class="front-face" src="PNG/2S.png" />
       </div>
 
-      <div class="card" data-value=15>
-        <img class ="front-face" src= "PNG/3S.png"/>
+      <div class="card" data-value="15">
+        <img class="front-face" src="PNG/3S.png" />
       </div>
 
-      <div class="card" data-value=16>
-        <img class ="front-face" src= "PNG/4S.png"/>
+      <div class="card" data-value="16">
+        <img class="front-face" src="PNG/4S.png" />
       </div>
 
-      <div class="card" data-value=17>
-        <img class ="front-face" src= "PNG/5S.png"/>
+      <div class="card" data-value="17">
+        <img class="front-face" src="PNG/5S.png" />
       </div>
 
-      <div class="card" data-value=18>
-        <img class ="front-face" src= "PNG/6S.png"/>
+      <div class="card" data-value="18">
+        <img class="front-face" src="PNG/6S.png" />
       </div>
 
-      <div class="card" data-value=19>
-        <img class ="front-face" src= "PNG/7S.png"/>
+      <div class="card" data-value="19">
+        <img class="front-face" src="PNG/7S.png" />
       </div>
 
-      <div class="card" data-value=20>
-        <img class ="front-face" src= "PNG/8S.png"/>
+      <div class="card" data-value="20">
+        <img class="front-face" src="PNG/8S.png" />
       </div>
 
-      <div class="card" data-value=21>
-        <img class ="front-face" src= "PNG/9S.png"/>
+      <div class="card" data-value="21">
+        <img class="front-face" src="PNG/9S.png" />
       </div>
 
-      <div class="card" data-value=22>
-        <img class ="front-face" src= "PNG/10S.png"/>
+      <div class="card" data-value="22">
+        <img class="front-face" src="PNG/10S.png" />
       </div>
 
-      <div class="card" data-value=23>
-        <img class ="front-face" src= "PNG/JS.png"/>
+      <div class="card" data-value="23">
+        <img class="front-face" src="PNG/JS.png" />
       </div>
 
-      <div class="card" data-value=24>
-        <img class ="front-face" src= "PNG/QS.png"/>
+      <div class="card" data-value="24">
+        <img class="front-face" src="PNG/QS.png" />
       </div>
 
-      <div class="card" data-value=25>
-        <img class ="front-face" src= "PNG/KS.png"/>
+      <div class="card" data-value="25">
+        <img class="front-face" src="PNG/KS.png" />
       </div>
 
-      <div class="card" data-value=26 style="order: 28;">
-        <img class ="front-face" src= "PNG/AH.png"/>
+      <div class="card" data-value="26" style="order: 28">
+        <img class="front-face" src="PNG/AH.png" />
       </div>
 
-      <div class="card" data-value=27>
-        <img class ="front-face" src= "PNG/2H.png"/>
+      <div class="card" data-value="27">
+        <img class="front-face" src="PNG/2H.png" />
       </div>
 
-      <div class="card" data-value=28>
-        <img class ="front-face" src= "PNG/3H.png"/>
+      <div class="card" data-value="28">
+        <img class="front-face" src="PNG/3H.png" />
       </div>
 
-      <div class="card" data-value=29>
-        <img class ="front-face" src= "PNG/4H.png"/>
+      <div class="card" data-value="29">
+        <img class="front-face" src="PNG/4H.png" />
       </div>
 
-      <div class="card" data-value=30>
-        <img class ="front-face" src= "PNG/5H.png"/>
+      <div class="card" data-value="30">
+        <img class="front-face" src="PNG/5H.png" />
       </div>
 
-      <div class="card" data-value=31>
-        <img class ="front-face" src= "PNG/6H.png"/>
+      <div class="card" data-value="31">
+        <img class="front-face" src="PNG/6H.png" />
       </div>
 
-      <div class="card" data-value=32>
-        <img class ="front-face" src= "PNG/7H.png"/>
+      <div class="card" data-value="32">
+        <img class="front-face" src="PNG/7H.png" />
       </div>
 
-      <div class="card" data-value=33>
-        <img class ="front-face" src= "PNG/8H.png"/>
+      <div class="card" data-value="33">
+        <img class="front-face" src="PNG/8H.png" />
       </div>
 
-      <div class="card" data-value=34>
-        <img class ="front-face" src= "PNG/9H.png"/>
+      <div class="card" data-value="34">
+        <img class="front-face" src="PNG/9H.png" />
       </div>
 
-      <div class="card" data-value=35>
-        <img class ="front-face" src= "PNG/10H.png"/>
+      <div class="card" data-value="35">
+        <img class="front-face" src="PNG/10H.png" />
       </div>
 
-      <div class="card" data-value=36>
-        <img class ="front-face" src= "PNG/JH.png"/>
+      <div class="card" data-value="36">
+        <img class="front-face" src="PNG/JH.png" />
       </div>
 
-      <div class="card" data-value=37>
-        <img class ="front-face" src= "PNG/QH.png"/>
+      <div class="card" data-value="37">
+        <img class="front-face" src="PNG/QH.png" />
       </div>
 
-      <div class="card" data-value=38>
-        <img class ="front-face" src= "PNG/KH.png"/>
+      <div class="card" data-value="38">
+        <img class="front-face" src="PNG/KH.png" />
       </div>
 
-      <div class="card" data-value=39 style="order: 42;">
-        <img class ="front-face" src= "PNG/AD.png"/>
+      <div class="card" data-value="39" style="order: 42">
+        <img class="front-face" src="PNG/AD.png" />
       </div>
 
-      <div class="card" data-value=40>
-        <img class ="front-face" src= "PNG/2D.png"/>
+      <div class="card" data-value="40">
+        <img class="front-face" src="PNG/2D.png" />
       </div>
 
-      <div class="card" data-value=41>
-        <img class ="front-face" src= "PNG/3D.png"/>
+      <div class="card" data-value="41">
+        <img class="front-face" src="PNG/3D.png" />
       </div>
 
-      <div class="card" data-value=42>
-        <img class ="front-face" src= "PNG/4D.png"/>
+      <div class="card" data-value="42">
+        <img class="front-face" src="PNG/4D.png" />
       </div>
 
-      <div class="card" data-value=43>
-        <img class ="front-face" src= "PNG/5D.png"/>
+      <div class="card" data-value="43">
+        <img class="front-face" src="PNG/5D.png" />
       </div>
 
-      <div class="card" data-value=44>
-        <img class ="front-face" src= "PNG/6D.png"/>
+      <div class="card" data-value="44">
+        <img class="front-face" src="PNG/6D.png" />
       </div>
 
-      <div class="card" data-value=45>
-        <img class ="front-face" src= "PNG/7D.png"/>
+      <div class="card" data-value="45">
+        <img class="front-face" src="PNG/7D.png" />
       </div>
 
-      <div class="card" data-value=46>
-        <img class ="front-face" src= "PNG/8D.png"/>
+      <div class="card" data-value="46">
+        <img class="front-face" src="PNG/8D.png" />
       </div>
 
-      <div class="card" data-value=47>
-        <img class ="front-face" src= "PNG/9D.png"/>
+      <div class="card" data-value="47">
+        <img class="front-face" src="PNG/9D.png" />
       </div>
 
-      <div class="card" data-value=48>
-        <img class ="front-face" src= "PNG/10D.png"/>
+      <div class="card" data-value="48">
+        <img class="front-face" src="PNG/10D.png" />
       </div>
 
-      <div class="card" data-value=49>
-        <img class ="front-face" src= "PNG/JD.png"/>
+      <div class="card" data-value="49">
+        <img class="front-face" src="PNG/JD.png" />
       </div>
 
-      <div class="card" data-value=50>
-        <img class ="front-face" src= "PNG/QD.png"/>
+      <div class="card" data-value="50">
+        <img class="front-face" src="PNG/QD.png" />
       </div>
 
-      <div class="card" data-value=51>
-        <img class ="front-face" src= "PNG/KD.png"/>
+      <div class="card" data-value="51">
+        <img class="front-face" src="PNG/KD.png" />
       </div>
 
-      <div class="card"data-value="yellow" style="order : 1;">
-        <img class ="front-face" src= "PNG/Yellow.png"/>
+      <div class="card" data-value="yellow" style="order: 1">
+        <img class="front-face" src="PNG/Yellow.png" />
       </div>
 
-      <div class="card"data-value="yellow" style="order : 15;">
-        <img class ="front-face" src= "PNG/Yellow.png"/>
+      <div class="card" data-value="yellow" style="order: 15">
+        <img class="front-face" src="PNG/Yellow.png" />
       </div>
 
-      <div class="card"data-value="yellow" style="order : 29;">
-        <img class ="front-face" src= "PNG/Yellow.png"/>
+      <div class="card" data-value="yellow" style="order: 29">
+        <img class="front-face" src="PNG/Yellow.png" />
       </div>
 
-      <div class="card"data-value="yellow" style="order : 43;">
-        <img class ="front-face" src= "PNG/Yellow.png"/>
+      <div class="card" data-value="yellow" style="order: 43">
+        <img class="front-face" src="PNG/Yellow.png" />
       </div>
-
     </section>
     <script src="scripts/stopwatch.js" charset="utf-8"></script>
     <script src="scripts/Deck.js" charset="utf-8"></script>
